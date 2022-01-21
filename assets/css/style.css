@@ -1,0 +1,86 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+/*resetar css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*obedece as bordas, não deixa sair do elemento*/
+}
+
+/* elementos base do app*/
+body{
+  background: var(--preto);
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+header .container{
+    display: flex; /*Joga os elementos para a mesma linha*/
+    flex-direction: row; /*Já vem no display: flex, por padrão somente uma semântica*/
+    align-items: center;
+    justify-content: space-between; /*cria um espaçamento entre os elementos em linhas no caso entre o " H2 e NAV "  */
+
+}
+
+header .logo{
+    margin-left: 6px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+/*quando o mouse estiver em cima do elemento de navegação*/
+header nav a:hover{
+    color: #fff;
+}
+
+
+/*filme principal*/
+/*linear-gradient = para imagens claras colocar um gradiente*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), 
+    rgba(0, 0, 0, .50)100%), url('../img/capa.jpg');
+
+    height: 400px; /*tamanho do elemento*/
+    background-size: cover; /*a imagem ocupa todo o espaço do elemento*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    /*justify-content e  align-items sempre vão acompanhar o flex-direction dependendo se estiver como ROW ou COLUMN muda a direção*/    
+}
+
+.filme-principal .descricao{
+    margin-bottom: 90px;
+}
+
+.titulo-filme-principal{
+    font-size: 40px;
+}
+
+.sinopse{
+
+}
+
+.descricao{
+
+}
+
+
+main {
+
+}
