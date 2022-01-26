@@ -5,6 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- RESPONSIVIDADE -->
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+
+        <!-- OWL CSS -->
+        <link rel="stylesheet" href="./assets/css/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/css/owl/owl.theme.default.min.css">
         
         <title>NETFLIX CLONE</title>
     </head>
@@ -25,19 +32,60 @@
             <div class="filme-principal">
                 <div class="container">
                     <h3 class="titulo-filme-principal">Mr. Robot</h3>
-                    <span class="sinopse">Sinopse</span>
                     <p class="descricao">Elliot é um jovem programador que sofre de uma desordem que o torna anti-social. Acreditando que a única forma de se conectar com as pessoas é hackeando suas vidas.</p>
 
                     <div class="botoes">
-                        <button role="button" class="botao-agora">
+                        <button role="button" class="botao">
+                            <i class="fas fa-play"></i>
                             ASSISTIR AGORA
                         </button>
-                        <button role="button" class="botao-info">
+                        <button role="button" class="botao">
+                            <i class="fas fa-info-circle"></i>
                             MAIS INFOMAÇÕES
                         </button>
                     </div>
                 </div>
             </div>
         </main>
+
+        <div class="carousel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/detencao.jpg" alt="detencao">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/homemAra.jpg" alt="homem-aranha">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/megatu.jpg" alt="mega-tubarao">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/mercenarios.jpg" alt="mercenarios">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/osSimpsons.jpg" alt="os-simpsons">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/prisionB.jpg" alt="prision-break">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/re.jpg" alt="resident-evil">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/roda.jpg" alt="roda-do-tempo">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/round.jpg" alt="round-6">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/venom.jpg" alt="venom">
+                </div>
+            </div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/88da546ac8.js" crossorigin="anonymous"></script>
+        <script src="./assets/js/owl/jquery.min.js"></script>
+        <script src="./assets/js/owl/owl.carousel.min.js"></script>
+        <script src="./assets/js/owl/scripts.js"></script>
     </body>
 </html>
